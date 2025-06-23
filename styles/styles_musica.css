@@ -1,0 +1,753 @@
+:root {
+    --primary-red: #8B1538;
+    --primary-teal: #2C5F5F;
+    --dark-blue: #1a1a2e;
+    --accent-blue: #16213e;
+    --text-light: #ffffff;
+    --text-muted: #b8b8b8;
+    --gradient-red: linear-gradient(135deg, #8B1538 0%, #4a0e1f 100%);
+    --gradient-teal: linear-gradient(135deg, #2C5F5F 0%, #1a3d3d 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-top: 100px; 
+}
+
+
+.custom-navbar {
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.brand-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-light);
+    display: block;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: -0.25rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-red) !important;
+}
+
+
+.announcement-bar {
+    background: var(--gradient-red);
+    padding: 0.75rem 0;
+    position: relative;
+    margin-top: 80px;
+}
+
+.announcement-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.announcement-bar .btn-link {
+    color: var(--text-light);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.announcement-bar .btn-link:hover {
+    color: var(--text-muted);
+}
+
+
+.hero-section {
+    min-height: 100vh; 
+    height: auto;      
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 100px; 
+    background-image: url('../imagenes/ADO.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--primary-red) 0%, var(--primary-teal) 100%);
+    opacity: 0.9;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    mix-blend-mode: multiply;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.anniversary-badge {
+    margin-bottom: 2rem;
+}
+
+.badge-circle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.badge-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.badge-years {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.badge-anniv {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.badge-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--primary-teal);
+    font-size: 1.2rem;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.album-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    font-weight: bold;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--text-light);
+}
+
+.release-date {
+    font-size: 1.5rem;
+    color: var(--primary-teal);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-size: 1.2vw;
+}
+
+.btn-primary {
+    background: var(--text-light);
+    color: var(--dark-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--text-muted);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+}
+
+.btn-outline-light:hover {
+    background: var(--text-light);
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.album-cover {
+    position: relative;
+    z-index: 2;
+}
+
+.album-image {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.album-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--gradient-teal);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.album-art {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: linear-gradient(45deg, rgba(139, 21, 56, 0.8), rgba(44, 95, 95, 0.8));
+}
+
+.character-silhouette {
+    flex: 1;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M100 20c20 0 40 20 40 40v40c0 20-20 40-40 40s-40-20-40-40V60c0-20 20-40 40-40z" fill="white" opacity="0.3"/><path d="M70 160c0-20 13-30 30-30s30 10 30 30v20H70v-20z" fill="white" opacity="0.2"/></svg>') center/contain no-repeat;
+}
+
+.album-title-overlay {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+
+.hero-controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.hero-controls .btn-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero-controls .btn-link:hover {
+    color: var(--text-muted);
+}
+
+
+.newsletter-section {
+    background: var(--accent-blue);
+    color: var(--text-light);
+}
+
+.newsletter-section h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.newsletter-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-light);
+    padding: 1rem 1.5rem;
+    border-radius: 50px 0 0 50px;
+}
+
+.newsletter-form .form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.newsletter-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-red);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(139, 21, 56, 0.25);
+}
+
+.newsletter-form .btn-primary {
+    background: var(--primary-red);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0 50px 50px 0;
+}
+
+.newsletter-form .btn-primary:hover {
+    background: #6b1028;
+    transform: none;
+}
+
+
+.social-section {
+    background: var(--dark-blue);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--primary-red);
+    color: var(--text-light);
+    transform: translateY(-3px);
+}
+
+
+.footer {
+    background: #181818;
+    color: #fff;
+}
+
+.footer h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer i {
+    margin-right: 8px;
+    color: #ff4081; /* O el color que uses para destacar */
+}
+
+.footer-selectors .form-label {
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-selectors .form-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-light);
+    border-radius: 8px;
+}
+
+.footer-selectors .form-select:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-red);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(139, 21, 56, 0.25);
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.payment-icon {
+    height: 32px;
+    border-radius: 4px;
+}
+
+.footer-links {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-light);
+}
+
+.footer-link:not(:last-child)::after {
+    content: "•";
+    margin-left: 1rem;
+    color: var(--text-muted);
+}
+
+.hero-title {
+    font-size: 4vw; 
+}
+
+.album-title {
+    font-size: 2vw;
+}
+
+.hero-album-info p,
+.hero-buttons .btn {
+    font-size: 1.2vw;
+}
+
+
+.logo,
+.album-image img,
+.album-placeholder img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+    display: block;
+}
+
+@media (min-width: 1400px) {
+    .logo {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .album-title {
+        font-size: 2rem;
+    }
+    
+    .release-date {
+        font-size: 1.25rem;
+    }
+    
+    .badge-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .badge-text {
+        font-size: 1.2rem;
+    }
+    
+    .badge-years {
+        font-size: 1.5rem;
+    }
+    
+    .album-image {
+        max-width: 300px;
+    }
+    
+    .hero-section {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .album-title {
+        font-size: 1.5rem;
+    }
+    
+    .release-date {
+        font-size: 1.1rem;
+    }
+    
+    .badge-circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .badge-text {
+        font-size: 1rem;
+    }
+    
+    .badge-years {
+        font-size: 1.2rem;
+    }
+    
+    .badge-anniv {
+        font-size: 0.8rem;
+    }
+    
+    .hero-buttons .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .newsletter-section h3 {
+        font-size: 2rem;
+    }
+    
+    .newsletter-form .form-control {
+        border-radius: 25px;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-form .btn-primary {
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .payment-methods {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .footer-menu {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-link:not(:last-child)::after {
+        display: none;
+    }
+    
+    .footer-link {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 100vh;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .album-title {
+        font-size: 1.25rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .announcement-text {
+        font-size: 0.8rem;
+    }
+    
+    .brand-text {
+        font-size: 1.5rem;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInLeft 1s ease-out;
+}
+
+.album-cover {
+    animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.newsletter-section {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-content,
+    .album-cover,
+    .newsletter-section {
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    .hero-content {
+        animation-delay: 0.2s;
+    }
+    
+    .album-cover {
+        animation-delay: 0.5s;
+    }
+}
+
+
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid var(--primary-red);
+    outline-offset: 2px;
+}
+
+.nav-link:focus,
+.social-link:focus,
+.footer-link:focus {
+    outline: 2px solid var(--primary-red);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+
+@media (prefers-contrast: high) {
+    :root {
+        --text-muted: #cccccc;
+    }
+    
+    .hero-background {
+        opacity: 0.7;
+    }
+    
+    .album-art {
+        background: linear-gradient(45deg, rgba(139, 21, 56, 0.9), rgba(44, 95, 95, 0.9));
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        background-position: center 50%;
+    }
+}
+
+.album-card-transparent {
+    background: rgba(255,255,255,0.05); 
+    box-shadow: none;
+    border: none;
+    transition: background 0.2s;
+}
+.album-card-transparent:hover {
+    background: rgba(255,255,255,0.15);
+}
+.album-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.album-artist {
+    font-size: 1rem;
+    color: #aaa;
+}
+.album-info, .album-price, .album-shipping {
+    font-size: 1rem;
+}
