@@ -105,6 +105,7 @@ body {
     
 }
 
+/* Hero y chips para Noticias */
 .noticias-hero {
     position: relative;
     min-height: 68vh; /* ~50% más alto */
@@ -113,7 +114,7 @@ body {
     margin-right: calc((100vw - 100%) / -2);
     border-radius: 0; /* bordes hasta la pantalla */
     background-size: cover;
-    background-position: center 30%;
+    background-position: center;
     overflow: hidden;
     transition: opacity 0.8s ease-in-out;
 }
@@ -133,6 +134,7 @@ body {
 .noticias-hero-title {
     font-size: 2rem;
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .noticias-hero-chips {
@@ -150,6 +152,11 @@ body {
     padding: 0.35rem 0.6rem;
     border-radius: 999px;
     font-size: 0.9rem;
+}
+
+.noticias-subtitle {
+    color: #fff;
+    font-size: 1.75rem; /* ligeramente menor que el H1 */
 }
 
 .hero-background {
@@ -399,8 +406,6 @@ body {
 
 .social-section {
     background: var(--dark-blue);
-    padding-top: 1rem !important;
-    padding-bottom: 0.5rem !important;
 }
 
 .social-links {

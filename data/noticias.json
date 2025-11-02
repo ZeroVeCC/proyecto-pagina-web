@@ -1,0 +1,54 @@
+{
+  "noticias": [
+    {
+      "id": "merch_hibana",
+      "titulo": "Nuevo Merch de Hibana",
+      "resumen": "Colección inspirada en Hibana con accesorios exclusivos.",
+      "imagen": "../imagenes/ado_hibana_merch.jpg",
+      "etiqueta": "Anuncio"
+    },
+    {
+      "id": "zanmu_vinilo",
+      "titulo": "Reedición en Vinilo de Zanmu",
+      "resumen": "El álbum Zanmu regresa en vinilo con arte renovado.",
+      "imagen": "../imagenes/ado_zanmu.jpg",
+      "etiqueta": "Lanzamiento"
+    },
+    {
+      "id": "figura_ado",
+      "titulo": "Figura coleccionable de Ado",
+      "resumen": "Figura de edición limitada en colaboración con Oda.",
+      "imagen": "../imagenes/new-ado-figure.jpg",
+      "etiqueta": "Preventa"
+    },
+    {
+      "id": "presentacion_ado",
+      "titulo": "Presentación especial de Ado",
+      "resumen": "Ado comparte detalles de su próximo proyecto musical.",
+      "imagen": "../imagenes/ado_presentacion.jpg",
+      "etiqueta": "Evento"
+    },
+    {
+      "id": "adoroza_collab",
+      "titulo": "Colaboración Adoroza",
+      "resumen": "Nueva línea de merch con temática Adoroza.",
+      "imagen": "../imagenes/new-adoroza-merch-gatoado.jpg",
+      "etiqueta": "Anuncio"
+    },
+    {
+      "id": "hibana_set",
+      "titulo": "Set Hibana edición limitada",
+      "resumen": "Set con piezas únicas inspiradas en Hibana.",
+      "imagen": "../imagenes/im-ready-for-hibana.jpg",
+      "etiqueta": "Preventa"
+    },
+    {
+      "id": "adobum_v2",
+      "titulo": "Ado’s Best Adobum Vol.2",
+      "resumen": "Nuevas pistas y arte para la edición vinilo.",
+      "contenido": "Se anunció la edición vinilo de Adobum Vol.2 con arte actualizado y selección remasterizada de canciones icónicas.",
+      "imagen": "../imagenes/ado-vinilo2.jpg",
+      "etiqueta": "Lanzamiento"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "albums": [
+    {
+      "id": "ado_kyogen",
+      "artist": "ADO",
+      "title": "Ado's Best Adobum, primer sencillo",
+      "description": "Primer Adobum, contiene 14 canciones icónicas. [CD+Blu-ray]",
+      "price": 10000,
+      "currency": "$",
+      "image": "../imagenes/ado_kyogen.jpg"
+    },
+    {
+      "id": "ado_zanmu",
+      "artist": "ADO",
+      "title": "Ado's Best Adobum Vol, segundo sencillo",
+      "description": "Segundo Adobum, contiene 16 canciones icónicas. [CD+Blu-ray]",
+      "price": 10000,
+      "currency": "$",
+      "image": "../imagenes/ado_zanmu.jpg"
+    },
+    {
+      "id": "ado_vinilo1",
+      "artist": "ADO",
+      "title": "Ado's Best Adobum Vol.1 [Vinilo]",
+      "description": "Primer volumen con más de 20 canciones icónicas. [Vinilo]",
+      "price": 30000,
+      "currency": "$",
+      "image": "../imagenes/ado-vinilo1.jpg"
+    },
+    {
+      "id": "ado_vinilo2",
+      "artist": "ADO",
+      "title": "Ado's Best Adobum Vol.2 [Vinilo]",
+      "description": "Segundo volumen con más de 20 canciones icónicas. [Vinilo]",
+      "price": 30000,
+      "currency": "$",
+      "image": "../imagenes/ado-vinilo2.jpg"
+    }
+  ]
+}

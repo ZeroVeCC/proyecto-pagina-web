@@ -1,0 +1,76 @@
+{
+  "productos": [
+    {
+      "id": "peluche_ado",
+      "title": "Ado peluche",
+      "description": "Peluche de Ado, con el diseño de la misma Ado",
+      "precio": 20000,
+      "estado": "Disponible",
+      "image": "../imagenes/ado-peluche.jpg"
+    },
+    {
+      "id": "peluche_orihara",
+      "title": "Ado peluche x ORIHARA",
+      "description": "Ado peluche, diseñado por ORIHARA",
+      "precio": 20000,
+      "estado": "Disponible",
+      "image": "../imagenes/ado-peluche-serio.jpg"
+    },
+    {
+      "id": "figura_ado_oda",
+      "title": "Figura Ado x Oda",
+      "description": "Figura de Ado con diseño de Oda (One Piece)",
+      "precio": 50000,
+      "estado": "Disponible",
+      "image": "../imagenes/new-ado-figure.jpg"
+    },
+    {
+      "id": "aritos_hibana",
+      "title": "Aritos Hibana",
+      "description": "Aritos inspirados en Hibana, diseño único y elegante.",
+      "precio": 2000,
+      "estado": "Disponible",
+      "image": "../imagenes/hibana-merch-aritos.jpg"
+    },
+    {
+      "id": "set_hibana",
+      "title": "Set Hibana",
+      "description": "Set inspirado en Hibana con aros y accesorios.",
+      "precio": 30000,
+      "estado": "Disponible",
+      "image": "../imagenes/im-ready-for-hibana.jpg"
+    },
+    {
+      "id": "set_adoroza",
+      "title": "Set de Adoroza",
+      "description": "Set inspirado en Adoroza, con orejas y accesorios.",
+      "precio": 40000,
+      "estado": "Disponible",
+      "image": "../imagenes/new-adoroza-merch-gatoado.jpg"
+    },
+    {
+      "id": "remera_ado_1",
+      "title": "Remera Ado",
+      "description": "Remera de Ado inspirada en sus personajes icónicos",
+      "precio": 20000,
+      "estado": "Disponible",
+      "image": "../imagenes/ado_remera1.jpg"
+    },
+    {
+      "id": "pings_ado",
+      "title": "Pings de Ado",
+      "description": "Set de pings inspirados en Ado y sus personajes",
+      "precio": 10000,
+      "estado": "Disponible",
+      "image": "../imagenes/pings_ado.jpg"
+    },
+    {
+      "id": "remera_ado_2",
+      "title": "Remera Ado",
+      "description": "Remera de Ado inspirada en Ado",
+      "precio": 20000,
+      "estado": "Disponible",
+      "image": "../imagenes/Ado_remera2.jpg"
+    }
+  ]
+}
